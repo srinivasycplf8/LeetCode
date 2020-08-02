@@ -1,0 +1,1 @@
+def dynamicArray(n, queries):
