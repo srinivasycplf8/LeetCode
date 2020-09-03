@@ -1,14 +1,21 @@
-def merge_sort(given_array):
+#Programaing Assigenement 1 - Problem - 2
+
+
+def merge_sort(given_length,given_array):
     n=len(given_array)
     if n<2:
         return
     mid=n//2
     left=given_array[0:mid]
     right=given_array[mid:n]
-    merge_sort(left)
-    merge_sort(right)
-    S=merge_two_sorted_arrays(left,right,given_array)   
-    return S 
+    merge_sort(given_length,left)
+    merge_sort(given_length,right)
+    S=merge_two_sorted_arrays(left,right,given_array)
+    if len(S)==int(given_length):
+        S=' '.join(map(str,S)) 
+        return S
+    return S
+    
 
 
 def merge_two_sorted_arrays(left_array,right_array,original_array):
@@ -30,7 +37,11 @@ def merge_two_sorted_arrays(left_array,right_array,original_array):
             else:
                 original_array[i]=left_array[pointer_left_array]
                 pointer_left_array+=1
+            
     return original_array
 
-U=[1,4,8,9,7]
-print(merge_sort(U))
+input_length=input()
+input_array=input()
+input_array=list(map(int,input_array.split(" ")))
+x=merge_sort(input_length,input_array)
+print(x)
