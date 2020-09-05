@@ -23,6 +23,7 @@ class Solution:
         isleaf(root1,self.queue1)
         isleaf(root2,self.queue2)
         
+        
         print(self.queue1)
         print(self.queue2)
         
