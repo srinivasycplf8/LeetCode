@@ -35,4 +35,6 @@ def palindromic_long_String(s):
       
     return s[longest[1]:longest[2]+1]
 
-print(palindromic_long_String("asbracecarssss"))
+x = input()
+
+print(len(palindromic_long_String(x)))
