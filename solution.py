@@ -1,6 +1,7 @@
 #Programaing Assigenement 1 - Problem - 2
 
-
+import time
+start = time.time()
 def merge_sort(given_length,given_array):
     n=len(given_array)
     if n<2:
@@ -42,3 +43,12 @@ def merge_two_sorted_arrays(left_array,right_array,original_array):
 
 x=merge_sort(4,[9,6,8,4,44,2,3,1,22])
 print(x)
+time.sleep(1)
+
+# program body ends
+
+# end time
+end = time.time()
+
+# total time taken
+print(f"Runtime of the program is {end - start}")
