@@ -4,7 +4,6 @@ def diagonal_sort(mat):
     new=[]
     value=[]
 
-    #helllo
 
     #jj
 
