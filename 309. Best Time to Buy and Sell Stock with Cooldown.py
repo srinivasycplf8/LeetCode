@@ -6,6 +6,9 @@ def diagonal_sort(mat):
 
 
     #jj
+    
+    
+    #oooookkkk
 
     for i in range(row):
       
