@@ -1,4 +1,4 @@
-
+#3hh
 def search_from_middle(s,left,right):
 
     storage={}
