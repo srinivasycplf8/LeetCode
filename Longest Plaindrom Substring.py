@@ -1,4 +1,4 @@
-#commit pull
+#commit ammend
 def search_from_middle(s,left,right):
 
     storage={}
